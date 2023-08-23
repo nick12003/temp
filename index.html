@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>關網資訊-會員中心</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .outer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .divider {
+        margin: 2rem 0;
+        border-top: 1px solid #ccc;
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .header-info {
+        padding: 1.5rem;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        font-weight: 300;
+      }
+
+      .main {
+        flex: 1;
+        background-color: #efefef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        padding: 8rem 2rem;
+      }
+
+      .login-card {
+        height: 100%;
+        max-width: 500px;
+        padding: 0 5rem;
+        border-radius: 0;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 0;
+      }
+
+      .login-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .login-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      .login-form {
+        margin-top: 4rem;
+      }
+
+      .lint-text {
+        font-size: 1.75rem;
+      }
+
+      .advertise-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .advertise {
+        max-width: 400px;
+        /* min-width: 400px; */
+      }
+
+      @media (max-width: 1400px) {
+        .login-card {
+          max-width: 400px;
+        }
+      }
+
+      @media (max-width: 1280px) {
+        .login-card {
+          max-width: 70%;
+        }
+        .advertise-container {
+          order: 1;
+        }
+        .advertise {
+          max-width: 100%;
+        }
+        .main {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .login-card {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="outer">
+      <header class="header-info">
+        防疫期間 若來電佔線中，請加入LINE：@grv5496y，我們將儘快回覆，謝謝您！
+      </header>
+      <main class="main">
+        <div class="advertise-container">
+          <div class="advertise">
+            <a
+              target="_self"
+              href="https://docs.google.com/forms/d/1K4fbcYGaUEkfLRGA7mZLdiuK5i9j5vUimzIno9TmZzs/viewform?edit_requested=true"
+            >
+              <img
+                src="https://test3.gwis.com.tw/images/ads/SME_600x1000_01.jpg"
+                class="img-responsive"
+                scrolling="no"
+              />
+            </a>
+          </div>
+          <div class="advertise">
+            <a
+              target="_self"
+              href="https://docs.google.com/forms/d/1K4fbcYGaUEkfLRGA7mZLdiuK5i9j5vUimzIno9TmZzs/viewform?edit_requested=true"
+            >
+              <img
+                src="https://test3.gwis.com.tw/images/ads/SME_600x1000_01.jpg"
+                class="img-responsive"
+                scrolling="no"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="panel panel-default login-card">
+          <div class="panel-body login-content">
+            <div class="login-title">
+              <img
+                src="https://test3.gwis.com.tw/gwd/assets/GWlogo1.png"
+                alt="logo"
+                width="180"
+              />
+              <h2 style="font-weight: 400">電子發票系統登入</h2>
+            </div>
+            <div class="login-form">
+              <div class="row">
+                <div class="form-group form-group-lg col-md-12">
+                  <div class="input-group">
+                    <label class="input-group-addon" for="username"
+                      ><i class="fa fa-user text-primary"></i
+                    ></label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      name="username"
+                      placeholder="Enter Username"
+                      autofill="false"
+                      autocomplete="false"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group form-group-lg col-md-12">
+                  <div class="input-group">
+                    <label class="input-group-addon" for="password"
+                      ><i class="fa fa-lock text-primary"></i
+                    ></label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                      placeholder="Enter Password"
+                      autofill="false"
+                      autocomplete="false"
+                      required
+                    />
+                    <div class="view-icon-wrap" id="viewButton">
+                      <i class="fa fa-sharp fa-solid fa-eye"></i>
+                      <i class="fa fa-solid fa-eye-slash"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-group-lg col-md-12">
+                  <a class="text-info" href="/">忘記密碼？</a>
+                </div>
+                <div class="form-group form-group-lg col-md-12">
+                  <button
+                    class="col-md-12 btn btn-lg btn-primary"
+                    type="submit"
+                  >
+                    請使用帳號登入
+                  </button>
+                </div>
+                <div class="form-group form-group-lg col-md-12">
+                  <div class="col-md-12 divider"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group form-group-lg col-md-12 center">
+                  <a
+                    class="btn btn-info btn-lg col-md-4"
+                    target="_blank"
+                    href="http://www.gateweb.com.tw/contactus/"
+                    >聯絡我們</a
+                  >
+                  <a class="btn btn-warning btn-lg col-md-4" href="/"
+                    >服務申請</a
+                  >
+                </div>
+                <div class="form-group form-group-lg col-md-12 center">
+                  <span class="lint-text">電話滿線時請利用</span>
+                  <a href="https://lin.ee/sBFIv9V" target="_blank"
+                    ><img
+                      src="https://test3.gwis.com.tw/images/zh-Hant.png"
+                      alt="加入好友"
+                      height="36"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advertise-container">
+          <div class="advertise">
+            <a
+              target="_self"
+              href="https://docs.google.com/forms/d/1K4fbcYGaUEkfLRGA7mZLdiuK5i9j5vUimzIno9TmZzs/viewform?edit_requested=true"
+            >
+              <img
+                src="https://test3.gwis.com.tw/images/ads/SME_600x1000_01.jpg"
+                class="img-responsive"
+                scrolling="no"
+              />
+            </a>
+          </div>
+          <div class="advertise">
+            <a
+              target="_self"
+              href="https://docs.google.com/forms/d/1K4fbcYGaUEkfLRGA7mZLdiuK5i9j5vUimzIno9TmZzs/viewform?edit_requested=true"
+            >
+              <img
+                src="https://test3.gwis.com.tw/images/ads/SME_600x1000_01.jpg"
+                class="img-responsive"
+                scrolling="no"
+              />
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
