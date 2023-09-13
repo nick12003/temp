@@ -1,36 +1,45 @@
+body {
+  background-color: #f2f2f2;
+}
+
 .nav {
   padding: 1rem;
   text-align: center;
   font-weight: 300;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .main {
   width: 100%;
   height: calc(100vh - 40px);
+  padding: 0 42px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .vessel {
+  max-width: 1440px;
   display: flex;
-  max-width: 1020px;
-  padding: 24px;
   justify-content: center;
 }
 .vessel__item {
   flex: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .vessel__item:nth-child(2) {
-  flex: 1.5;
+  margin: 0 36px;
 }
 
 .u-my-2 {
-  margin: 12px 0;
+  margin: 20px 0;
+}
+
+.u-my-3 {
+  margin: 36px 0;
 }
 
 .button__wrap {
@@ -45,9 +54,11 @@
 
 .panel {
   width: 100%;
-  padding: 16px 20px;
-  border: 1px solid #ccc;
-  box-shadow: 5px #ccc;
+  max-width: 500px;
+  padding: 36px;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .panel__top {
   display: flex;
@@ -60,7 +71,7 @@
 .panel__title {
   width: 100%;
   font-size: 24px;
-  margin: 10px 0;
+  margin: 16px 0;
   font-weight: bold;
 }
 
@@ -83,8 +94,6 @@
   display: block;
   max-width: 600px;
   max-height: 500px;
-  margin: 0 24px;
-  border: 1px solid gray;
   overflow: hidden;
 }
 .ad__block img {
@@ -94,10 +103,25 @@
      object-fit: cover;
 }
 
-@media (min-width: 1400px) {
-  .ad__block {
-    width: 300px;
-    height: 250px;
+.input-group {
+  height: 42px;
+}
+.input-group .input-group-addon {
+  padding: 12px;
+}
+.input-group input {
+  height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .vessel__item:nth-child(2) {
+    margin: 0 20px;
+  }
+  .u-my-3 {
+    margin: 24px 0;
+  }
+  .panel {
+    padding: 28px;
   }
 }
 @media (max-width: 960px) {
@@ -110,15 +134,17 @@
   }
   .vessel__item {
     width: 100%;
-    margin: 10px 0;
-    flex: 1;
+    margin: 24px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   .vessel__item:nth-child(2) {
-    flex: 1;
+    margin: 0;
     flex-direction: column;
+  }
+  .panel {
+    max-width: 100%;
   }
   .ad + .ad {
     margin-top: 0;
