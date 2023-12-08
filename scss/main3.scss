@@ -1,12 +1,13 @@
-.outer {
+body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: #f2f2f2;
 }
 
 .divider {
   margin: 2rem 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ddd;
 }
 
 .direction-row {
@@ -27,27 +28,34 @@
 }
 
 .header-info {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   letter-spacing: 0.2rem;
   font-weight: 300;
-  background-color: #f2f2f2;
+  background-color: #fff;
 }
 
 .main {
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   gap: 4rem;
   padding: 8rem 2rem;
+  // outline: 1px solid lightcoral;
+}
+
+.login-wrap {
+  flex: 5;
+  // display: flex;
 }
 
 .login-card {
-  width: 500px;
+  width: 100%;
   padding: 0 2.5rem;
-  border: 1px solid #ccc;
+  border-radius: 16px;
   margin-bottom: 0;
+  flex: 1;
 }
 
 .login-content {
@@ -77,6 +85,7 @@
 }
 
 .advertise-container {
+  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,7 +94,7 @@
 
 .advertise {
   max-width: 420px;
-  border: 1px solid gray;
+  // border: 1px solid gray;
   img {
     aspect-ratio: 6/5;
     width: 100%;
@@ -96,13 +105,13 @@
 
 @media (max-width: 1400px) {
   .login-card {
-    width: 400px;
+    // width: 400px;
   }
 }
 
 @media (max-width: 1280px) {
   .login-card {
-    width: 300px;
+    // width: 300px;
   }
   .advertise {
     max-width: 350px;
@@ -124,7 +133,7 @@
   }
   .login-wrap {
     width: 100%;
-    max-width: 720px;
+    // max-width: 720px;
   }
   .login-card {
     width: 100%;
